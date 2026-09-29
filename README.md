@@ -1,458 +1,438 @@
 # Edgelite Technologies — Startup Financial Model & Investment Analysis
 
-> **Financial Modeling | Startup Valuation | Unit Economics | Scenario Analysis | Runway & Break-Even | Investor Returns**
+**Financial Modeling · Startup Valuation · Unit Economics · Scenario Analysis · Runway & Break-Even · Investor Returns**
 
-A comprehensive financial modeling and investment analysis case study for **Edgelite Technologies**, an early-stage robotics company targeting consumer and enterprise applications across the GCC and emerging markets.
+A complete startup financial modelling and investment analysis project built around **Edgelite Technologies**, an early-stage robotics company targeting consumer and enterprise applications across the GCC and emerging markets.
 
-The project combines a **24-month operating model**, customer acquisition and revenue build, cost structure, cash-flow and balance-sheet analysis, cap table, investor return scenarios, runway analysis, break-even analysis, and an executive investment report.
+The project demonstrates how an investment-grade operating model can connect **commercial assumptions → customer acquisition → revenue → costs → cash flow → runway → break-even → capitalization → investor returns**.
 
----
-
-## 📌 Project Overview
-
-Edgelite Technologies is modeled as a pre-revenue robotics startup developing dual-use autonomous robots for:
-
-* **Consumer / Home:** EdgeBot Home/Pro
-* **Enterprise:** EdgeBot Enterprise for logistics and hospitality applications
-
-The modeled commercial structure combines:
-
-* **Dubai** commercial operations
-* **Lagos** engineering and R&D operations
-* Contract manufacturing in Shenzhen / Southeast Asia
-* GCC-focused commercial expansion
-* Direct-to-consumer and enterprise revenue channels
-
-The objective of this project was to assess the company's:
-
-1. Revenue potential
-2. Unit economics
-3. Cost structure
-4. Cash runway
-5. Break-even requirements
-6. Funding requirements
-7. Valuation scenarios
-8. Seed investor returns
-9. Key operating and investment risks
+> **Note:** Edgelite Technologies is a financial modelling case study created for portfolio and analytical purposes. The analysis demonstrates modelling methodology rather than representing an actual investment recommendation.
 
 ---
 
-# 📊 Key Model Outputs
+## Project Overview
 
-### Operating Forecast
+The model was designed to answer the questions an investor, FP&A professional, investment analyst, or corporate finance team would typically ask when evaluating an early-stage hardware/software company:
 
-| Metric         |   Year 1 |   Year 2 |   Year 3 |
-| -------------- | -------: | -------: | -------: |
-| Revenue        |   $1.91M |   $3.54M |   $6.55M |
-| Revenue Growth |        — |    85.8% |    84.9% |
-| Gross Profit   |   $1.17M |   $2.17M |   $4.29M |
-| Gross Margin   |    61.1% |    64.7% |    65.6% |
-| EBITDA         | $(0.79)M | $(0.94)M | $(0.61)M |
-| EBITDA Margin  |   -41.5% |   -26.6% |    -9.3% |
-| Net Income     | $(0.82)M | $(1.02)M | $(0.76)M |
+* How does the company acquire customers?
+* What drives revenue growth?
+* What are the unit economics?
+* How does the cost structure scale?
+* How much capital is required?
+* When does the company run out of cash?
+* What level of sales is required to reach break-even?
+* How does the business perform under different scenarios?
+* How does the proposed financing affect ownership?
+* What returns could investors generate under different exit valuations?
 
-**Important:** Year 3 figures are presented as annualized operating metrics in the model.
-
-The model does not reach operating break-even within the 24-month forecast period. Break-even is projected into Year 4 under the base case.
-
----
-
-# 💰 Seed Financing
-
-The modeled seed round assumes:
-
-| Term                 | Assumption |
-| -------------------- | ---------: |
-| Seed Raise           |      $2.0M |
-| Pre-Money Valuation  |    $11.33M |
-| Post-Money Valuation |    $13.33M |
-| Equity Offered       |        15% |
-| Founding Team        |        85% |
-
-The model evaluates potential investor returns under several exit-value scenarios.
+The model contains **24 months of operating forecasts**, an annualised Year 3 view, scenario analysis, a three-statement financial model, cap table, investor return analysis, runway analysis, and break-even calculations.
 
 ---
 
-# 📈 Investor Return Scenarios
+# Model Architecture
 
-Based on the modeled Year 3 revenue of approximately **$6.55M**:
+The workbook is structured into the following modules:
 
-| Exit Scenario         | Revenue Multiple | Enterprise Value | Investor Proceeds* |  MOIC | Implied IRR |
-| --------------------- | ---------------: | ---------------: | -----------------: | ----: | ----------: |
-| Private Equity Exit   |               6× |           $39.3M |             ~$5.9M | ~2.9× |        ~42% |
-| Strategic Acquisition |               8× |           $52.4M |             ~$7.9M | ~3.9× |        ~57% |
-| IPO Scenario          |              12× |           $78.6M |            ~$11.8M | ~5.9× |        ~80% |
-| Breakout Scenario     |             ~15× |            $100M |            ~$15.0M | ~7.5× |        ~96% |
+| Sheet                              | Purpose                                                                    |
+| ---------------------------------- | -------------------------------------------------------------------------- |
+| **ASSUMPTIONS**                    | Centralised operating, pricing, inflation, hiring and scenario assumptions |
+| **CUSTOMER ACQUISITION & REVENUE** | DTC funnel, enterprise sales and revenue build                             |
+| **COST BUILD**                     | Manufacturing, fulfillment, payroll and operating cost assumptions         |
+| **CAP TABLE & INVESTOR RETURNS**   | Financing structure, ownership and exit return analysis                    |
+| **MONTHLY P&L**                    | 24-month income statement forecast                                         |
+| **CFS & SOFP**                     | Cash flow statement and statement of financial position                    |
+| **RUNWAY BURN & BREAKEVEN**        | Cash runway, burn rate and monthly break-even analysis                     |
+| **DASHBOARD**                      | Key operating and financial outputs                                        |
 
-*Investor proceeds are based on the modeled ownership assumptions.
-
-The $100M scenario represents an **illustrative breakout case**, rather than a forecast.
-
----
-
-# 🚀 Revenue Build
-
-The model uses a bottom-up customer acquisition and revenue approach rather than applying a simple percentage growth rate to revenue.
-
-Revenue is generated through two primary channels:
-
-### Direct-to-Consumer
-
-The DTC model incorporates:
-
-* Website traffic
-* Paid traffic
-* Organic traffic
-* Conversion rates
-* Order volume
-* Average selling price
-* Pricing escalation
-
-Base-case assumptions include:
-
-* Paid traffic CPC: **$0.35**
-* Paid conversion rate: **1.2%**
-* Organic conversion rate: **2.8%**
-* Annual pricing escalation: **3%**
-
-### Enterprise
-
-Enterprise revenue is driven by:
-
-* Enterprise deal volume
-* Enterprise unit pricing
-* Unit sales
-* Commercial adoption
-
-Base-case enterprise pricing is approximately **$8,000 per unit**.
+The architecture separates **assumptions from calculations and outputs**, allowing changes to core assumptions to flow through the model.
 
 ---
 
-# 🧮 Unit Economics
+# Key Operating Assumptions
 
-The model evaluates product-level economics across consumer and enterprise offerings.
+### Base Case
+
+| Assumption                |                   Base Case |
+| ------------------------- | --------------------------: |
+| Annual unit sales growth  |                     **50%** |
+| Annual pricing escalation |                      **3%** |
+| Cost inflation            |                     **12%** |
+| Wage inflation            |                     **10%** |
+| DTC price                 |                 **~$1,100** |
+| Enterprise price          |                  **$8,000** |
+| Fulfillment / shipping    |           **$100 per unit** |
+| Paid CPC                  |                   **$0.35** |
+| Paid conversion rate      |                    **1.2%** |
+| Organic conversion rate   |                    **2.8%** |
+| Enterprise deal velocity  | **2 deals/month initially** |
+| Rent & facilities         |            **$8,500/month** |
+
+The model also incorporates downside and upside operating scenarios by varying unit growth, pricing, inflation, customer adoption, manufacturing costs, marketing expenditure, and hiring pace.
+
+---
+
+# Customer Acquisition & Revenue Build
+
+The revenue model is built from operating drivers rather than simply applying a top-line growth percentage.
+
+### DTC Acquisition Funnel
+
+The initial monthly funnel includes:
+
+* 3,000 paid visits
+* 2,000 organic visits
+* 1.2% paid conversion
+* 2.8% organic conversion
+* 92 initial DTC orders
+* ~$101K initial DTC revenue
+
+The model then scales traffic, conversion, pricing and enterprise activity over the forecast period.
+
+### Revenue Mix
+
+Edgelite operates a hybrid:
+
+**DTC hardware + Enterprise robotics**
+
+The DTC channel provides volume while the enterprise product carries substantially higher revenue and gross profit per unit.
+
+---
+
+# Unit Economics
 
 ### Home / Pro
 
-| Metric                | Assumption |
-| --------------------- | ---------: |
-| Average Selling Price |    ~$1,100 |
-| BOM                   |      ~$433 |
-| Fulfillment           |      ~$100 |
-| Gross Profit          |      ~$567 |
-| Gross Margin          |     ~51.5% |
+| Metric              |     Amount |
+| ------------------- | ---------: |
+| ASP                 |    ~$1,100 |
+| BOM                 |       $433 |
+| Fulfillment         |       $100 |
+| Gross Profit / Unit |      ~$567 |
+| Gross Margin        | **~51.5%** |
 
 ### Enterprise
 
-| Metric                | Assumption |
-| --------------------- | ---------: |
-| Average Selling Price |    ~$8,000 |
-| BOM                   |      ~$970 |
-| Fulfillment           |      ~$100 |
-| Gross Profit          |    ~$6,930 |
-| Gross Margin          |     ~86.6% |
+| Metric              |     Amount |
+| ------------------- | ---------: |
+| ASP                 |     $8,000 |
+| BOM                 |       $970 |
+| Fulfillment         |       $100 |
+| Gross Profit / Unit |    ~$6,930 |
+| Gross Margin        | **~86.6%** |
 
-The enterprise product carries substantially higher unit economics and contributes to the blended gross-margin profile.
+The model therefore demonstrates how product mix can materially affect blended gross margins.
 
 ---
 
-# 💵 Cash Runway & Funding Requirement
+# Financial Forecast
 
-Cash runway is one of the most important findings in the model.
+### Base Case
 
-Under the base case:
+| Financial Metric |   Year 1 |   Year 2 | Year 3 Annualised |
+| ---------------- | -------: | -------: | ----------------: |
+| Revenue          |   $1.91M |   $3.54M |        **$6.55M** |
+| Gross Profit     |   $1.17M |   $2.17M |        **$4.29M** |
+| Gross Margin     |    61.1% |    64.7% |         **65.6%** |
+| EBITDA           | $(0.79)M | $(0.94)M |      **$(0.61)M** |
+| EBITDA Margin    |   -41.5% |   -26.6% |         **-9.3%** |
+| Net Income       | $(0.82)M | $(1.02)M |      **$(0.76)M** |
 
-* Seed funding: **$2.0M**
-* Month 1 opening liquidity after operating costs: **~$1.86M**
+The model demonstrates a typical early-stage scaling profile: revenue grows rapidly while payroll, product development and operating investment keep the company EBITDA-negative during the forecast period.
+
+**Year 3 is presented as an annualised operating view derived from the monthly forecast.**
+
+---
+
+# Scenario Analysis
+
+The model incorporates three operating scenarios:
+
+| Scenario      | Unit Growth | Year 3 Revenue |  Year 3 EBITDA |
+| ------------- | ----------: | -------------: | -------------: |
+| Downside      |         25% |         ~$4.0M |    Deeper loss |
+| **Base Case** |     **50%** |     **$6.55M** |   **$(0.61)M** |
+| Upside        |         80% |        ~$9–10M | Near breakeven |
+
+The purpose of the scenario analysis is to show how changes in fundamental operating assumptions affect the financial outcome rather than relying on a single-point forecast.
+
+---
+
+# Cash Runway
+
+The model tracks monthly cash consumption and identifies the point at which additional financing becomes necessary.
+
+### Key outputs
+
+* Initial seed funding: **$2.0M**
+* Opening liquidity after first-month operating costs: **~$1.86M**
 * Cash falls below the $150K threshold around **Month 20**
 * Cash becomes negative around **Month 21**
-* Operational break-even is not reached during the 24-month forecast
+* The model therefore identifies a clear financing requirement before the end of the 24-month operating forecast
 
-The executive report therefore identifies a significant **Series A funding requirement**.
+This creates a practical financing milestone:
 
-### Funding Strategy
+> **Series A fundraising should begin well before the cash runway is exhausted.**
 
-The modeled strategy calls for:
-
-* Series A fundraising process beginning around **Month 14**
-* Target Series A / bridge financing of approximately **$8M–$12M**
-* Funding intended to bridge the company toward operational break-even in Year 4
-
-This creates an important dependency:
-
-> The business needs to demonstrate sufficient commercial traction before the seed capital runway is exhausted.
+The model assumes a potential **$8M–$12M Series A** as the bridge toward Year 4 operating breakeven.
 
 ---
 
-# ⚖️ Break-Even Analysis
+# Break-Even Analysis
 
-The model calculates the monthly unit volume required to cover fixed operating costs.
+The model calculates the number of units required to cover operating costs at different points in the forecast.
 
-| Period   | Break-Even Units | Actual Units |
-| -------- | ---------------: | -----------: |
-| Month 1  |             ~170 |          ~95 |
-| Month 12 |                — |            — |
-| Month 24 |             ~414 |         ~306 |
+| Period   | Break-Even Units / Month | Actual Units / Month |
+| -------- | -----------------------: | -------------------: |
+| Month 1  |                     ~170 |                  ~95 |
+| Month 24 |                     ~414 |                 ~306 |
 
-The company therefore remains below break-even at the end of the 24-month forecast.
+This highlights an important feature of the business:
 
-The gap narrows over time as revenue scales and contribution margin improves.
+**Revenue growth alone does not guarantee near-term profitability.**
 
----
-
-# 🎯 Scenario Analysis
-
-The model includes three operating scenarios:
-
-| Scenario | Unit Growth | Estimated Year 3 Revenue |   Year 3 EBITDA |
-| -------- | ----------: | -----------------------: | --------------: |
-| Downside |     25% YoY |                   ~$4.0M |     Deeper loss |
-| Base     |     50% YoY |                   $6.55M |        $(0.61)M |
-| Upside   |     80% YoY |                  ~$9–10M | Near break-even |
-
-Additional scenario drivers include:
-
-* Inflation
-* Wage inflation
-* Customer adoption
-* Manufacturing costs
-* Pricing
-* Marketing spend
-* Hiring pace
-
-This allows the model to test how changes in operating assumptions affect financial performance.
+The company must simultaneously increase unit volume, maintain contribution margins and achieve operating leverage against its fixed cost base.
 
 ---
 
-# 🏗️ Model Architecture
+# Seed Financing & Cap Table
 
-The Excel model is structured into dedicated analytical sections:
+### Seed Round
+
+| Metric               |      Amount |
+| -------------------- | ----------: |
+| Seed Raise           |   **$2.0M** |
+| Pre-Money Valuation  | **$11.33M** |
+| Post-Money Valuation | **$13.33M** |
+| Equity Sold          |     **15%** |
+| Founder Ownership    |     **85%** |
+
+The cap table demonstrates the relationship between:
+
+**Investment → post-money valuation → ownership → exit proceeds → investor returns**
+
+The current model assumes the seed investor's 15% ownership for the return scenarios.
+
+---
+
+# Investor Return Analysis
+
+The model evaluates potential exit outcomes using revenue-based valuation multiples.
+
+| Exit Scenario         | Revenue Multiple | Enterprise Value | Investor Proceeds* |
+| --------------------- | ---------------: | ---------------: | -----------------: |
+| Private Equity Exit   |               6× |          ~$39.3M |             ~$5.9M |
+| Strategic Acquisition |               8× |          ~$52.4M |             ~$7.9M |
+| IPO                   |              12× |          ~$78.6M |            ~$11.8M |
+| Breakout Scenario     |             ~15× |           ~$100M |            ~$15.0M |
+
+*Investor proceeds are based on the model's 15% ownership assumption and are presented as scenario outputs.
+
+The purpose of this section is not to predict an exit valuation. It demonstrates how changes in exit valuation translate into investor economics.
+
+---
+
+# Key Investment Metrics
+
+Under the model's illustrative return scenarios:
+
+* **6× exit:** ~2.9× MOIC
+* **8× exit:** ~3.9× MOIC
+* **12× exit:** ~5.9× MOIC
+* **~15× exit:** ~7.5× MOIC
+
+The model therefore connects operating performance with valuation and ultimately with investor return outcomes.
+
+---
+
+# Risk Analysis
+
+The model and executive report identify several key risks:
+
+### Cash & Financing Risk
+
+The company remains EBITDA-negative through the 24-month forecast and requires additional capital before the current runway is exhausted.
+
+### Enterprise Sales Cycle
+
+Enterprise revenue depends on commercial deployments and procurement cycles that may take longer than anticipated.
+
+### DTC Conversion
+
+The revenue model depends on achieving the specified traffic and conversion assumptions.
+
+### Manufacturing
+
+Hardware scaling introduces manufacturing, supply-chain and fulfillment risks.
+
+### Operating Leverage
+
+Payroll and other fixed costs increase ahead of full operating profitability.
+
+### Valuation Risk
+
+Investor returns depend heavily on the valuation multiple achieved at exit.
+
+---
+
+# Executive Investment Analysis
+
+Alongside the financial model, I developed a **17-page executive investment report** covering:
+
+* Investment thesis
+* Company and product overview
+* Market opportunity
+* Business model
+* Revenue architecture
+* Unit economics
+* Financial forecast
+* Cash runway
+* Break-even analysis
+* Competitive landscape
+* Risk matrix
+* Valuation
+* Investor returns
+* Investment conditions
+* Model assumptions
+* Data sources
+
+The report translates the underlying spreadsheet model into an investor-facing analytical document.
+
+---
+
+# Investment Framework
+
+The project does not treat the financial model as an isolated spreadsheet.
+
+The analysis connects:
 
 ```text
-ASSUMPTIONS
-    ↓
-CUSTOMER ACQUISITION & REVENUE
-    ↓
-COST BUILD
-    ↓
-MONTHLY P&L
-    ↓
-CFS & SOFP
-    ↓
-RUNWAY / BURN / BREAK-EVEN
-    ↓
-CAP TABLE & INVESTOR RETURNS
-    ↓
-DASHBOARD
+Market Opportunity
+       ↓
+Business Model
+       ↓
+Customer Acquisition
+       ↓
+Revenue Drivers
+       ↓
+Unit Economics
+       ↓
+Cost Structure
+       ↓
+P&L / Cash Flow / Balance Sheet
+       ↓
+Runway & Break-Even
+       ↓
+Capital Requirement
+       ↓
+Cap Table
+       ↓
+Exit Valuation
+       ↓
+Investor Returns
 ```
 
-### Main Worksheets
-
-| Worksheet                        | Purpose                                           |
-| -------------------------------- | ------------------------------------------------- |
-| `ASSUMPTIONS`                    | Base, downside and upside operating assumptions   |
-| `CUSTOMER ACQUISITION & REVENUE` | Traffic, conversion, orders and revenue build     |
-| `COST BUILD`                     | Product costs and operating cost assumptions      |
-| `MONTHLY P&L`                    | 24-month income statement                         |
-| `CFS & SOFP`                     | Cash flow and balance sheet                       |
-| `RUNWAY BURN & BREAKEVEN`        | Cash runway and operating break-even              |
-| `CAP TABLE & INVESTOR RETURNS`   | Ownership, valuation and investor return analysis |
-| `DASHBOARD`                      | Key outputs and summary metrics                   |
+This was the primary objective of the project: **to demonstrate the ability to translate a business concept into an integrated financial model and then use that model to support investment analysis.**
 
 ---
 
-# 🔍 Investment Analysis
+# Skills Demonstrated
 
-The model evaluates the investment from both an **operating** and **return** perspective.
+### Financial Modelling
 
-Key questions addressed include:
-
-### Can the company scale revenue?
-
-The base case projects revenue increasing from:
-
-**$1.91M → $3.54M → $6.55M**
-
-over the first three forecast years.
-
-### Can the company become profitable?
-
-Not within the modeled 24-month period.
-
-Year 3 EBITDA remains approximately:
-
-**$(608K)**
-
-with break-even projected into Year 4.
-
-### How much additional capital is required?
-
-The model indicates that the initial $2M seed round is insufficient to carry the company through to operating break-even under the base case.
-
-A subsequent **$8M–$12M financing round** is therefore incorporated into the strategic funding plan.
-
-### What could an investor potentially earn?
-
-Under the modeled 15% ownership assumption:
-
-* ~$39M exit → approximately 2.9× MOIC
-* ~$52M exit → approximately 3.9× MOIC
-* ~$79M exit → approximately 5.9× MOIC
-* $100M exit → approximately 7.5× MOIC
-
-These are **scenario outputs, not predictions**.
-
----
-
-# ⚠️ Key Risks Identified
-
-The analysis highlights several material risks.
-
-### 1. Cash Runway
-
-The base case reaches cash exhaustion around Month 21, creating significant dependence on successful follow-on financing.
-
-### 2. Enterprise Sales Cycle
-
-The model assumes enterprise adoption and deal velocity that may be difficult to achieve if GCC procurement cycles are longer than expected.
-
-### 3. DTC Conversion
-
-A significant portion of the revenue build depends on achieving modeled website traffic and conversion assumptions.
-
-### 4. Manufacturing
-
-Hardware manufacturing introduces risks around:
-
-* BOM costs
-* Production delays
-* Supply chain
-* Tooling
-* Quality control
-* Fulfillment
-
-### 5. Follow-On Financing
-
-The company requires additional capital before projected operating break-even.
-
-Failure to raise that capital on acceptable terms would materially affect the modeled growth trajectory.
-
-### 6. Valuation Risk
-
-The $100M and higher exit scenarios require substantial revenue growth and/or premium revenue multiples.
-
-In particular, a **$250M exit** would represent approximately **38× Year 3 revenue** based on the modeled $6.55M Year 3 revenue.
-
-The $250M scenario is therefore treated as an **illustrative high-upside scenario**, rather than an operating forecast supported by the base case.
-
----
-
-# 🧠 Key Modeling Takeaways
-
-This project demonstrates several core financial modeling concepts:
-
-* Bottom-up revenue forecasting
-* Customer acquisition modeling
-* Unit economics
-* COGS modeling
-* Gross-margin analysis
-* Operating expense forecasting
-* EBITDA analysis
-* Cash-flow forecasting
-* Balance-sheet modeling
+* Integrated P&L, CFS and SOFP
+* Monthly forecasting
+* Assumption-driven modelling
+* Scenario analysis
+* Revenue build
+* Cost build
+* Working capital / cash flow analysis
+* Balance sheet modelling
 * Runway analysis
 * Break-even analysis
-* Scenario analysis
+
+### Investment Analysis
+
+* Pre-money / post-money valuation
 * Cap table construction
-* Enterprise-value analysis
-* Investor MOIC
-* Investor IRR
-* Funding requirements
-* Exit scenario analysis
+* Ownership analysis
+* Exit valuation
+* Revenue multiple analysis
+* MOIC
+* IRR
+* Investor proceeds
+
+### Commercial Analysis
+
+* Customer acquisition funnel
+* DTC conversion economics
+* Enterprise sales assumptions
+* Product-level unit economics
+* Pricing analysis
+* Product mix
+* Operating leverage
+
+### Presentation & Communication
+
+* Executive investment report
+* Investor-oriented dashboards
+* Financial KPI presentation
+* Scenario interpretation
+* Risk analysis
+* Investment conditions and milestones
 
 ---
 
-# 📁 Repository Contents
+# Repository Structure
 
 ```text
-EDGELITE-STARTUP-MODEL/
+EDGELITE-TECHNOLOGIES/
 │
-├── README.md
+├── EDGELITE STARTUP MODEL.xlsx
 │
-├── model/
-│   └── EDGELITE STARTUP MODEL.xlsx
+├── EDGELITE TECHNOLOGIES - Executive Report.pdf
 │
-├── report/
-│   └── EDGELITE TECHNOLOGIES - Executive Report.pdf
-│
-└── screenshots/
-    ├── dashboard.png
-    ├── revenue_forecast.png
-    ├── runway.png
-    ├── cap_table.png
-    └── investor_returns.png
+└── README.md
 ```
 
 ---
 
-# 📚 Supporting Research
+# What This Project Demonstrates
 
-The executive report references external sources including:
+This project was built to demonstrate more than the ability to populate an Excel spreadsheet.
 
-* International Federation of Robotics (IFR)
-* World Bank Open Data
-* Dubai International Financial Centre (DIFC)
-* MAGNiTT
-* Saudi Public Investment Fund (PIF)
-* Vision 2030 documentation
+It demonstrates the ability to:
 
-These sources were used to provide market, macroeconomic and regional context for the financial analysis.
+1. **Translate business assumptions into financial drivers**
+2. **Build an integrated operating model**
+3. **Model customer acquisition and revenue from operational inputs**
+4. **Analyse unit economics and contribution margins**
+5. **Forecast cash requirements and runway**
+6. **Identify break-even requirements**
+7. **Structure a startup financing and cap table**
+8. **Evaluate potential investor returns**
+9. **Stress-test the business through scenarios**
+10. **Convert financial analysis into an executive investment document**
 
----
-
-# ⚠️ Model Limitations & Important Notes
-
-This project is a **financial modeling case study**, not an investment recommendation or a forecast of actual company performance.
-
-The projections are highly dependent on assumptions surrounding:
-
-* Customer acquisition
-* Conversion rates
-* Unit growth
-* Enterprise deal velocity
-* Pricing
-* Manufacturing costs
-* Hiring
-* Inflation
-* Follow-on financing
-* Exit valuation multiples
-
-Projected investor returns should therefore be interpreted as **scenario-based outputs** rather than expected returns.
-
-The model also contains an annualized Year 3 operating column. Annualized operating metrics should be distinguished from actual cash-flow periods when extending or modifying the model.
+The model is intended to showcase practical capabilities relevant to **FP&A, investment analysis, corporate finance, financial modelling, venture capital and transaction-oriented roles.**
 
 ---
 
-# 🛠️ Skills Demonstrated
+## Project Deliverables
 
-**Financial Modeling**
+**Excel Financial Model**
 
-`Excel` · `Three-Statement Modeling` · `Revenue Forecasting` · `Unit Economics` · `Scenario Analysis`
+A fully integrated 24-month startup operating model covering assumptions, customer acquisition, revenue, costs, P&L, cash flow, balance sheet, cap table, investor returns, runway and break-even.
 
-**Investment Analysis**
+**Executive Investment Report**
 
-`Valuation` · `Cap Tables` · `MOIC` · `IRR` · `Exit Analysis` · `Funding Strategy`
-
-**Business Analysis**
-
-`Market Analysis` · `Customer Acquisition` · `Break-Even Analysis` · `Runway Analysis` · `Risk Assessment`
+A 17-page investor-facing analysis translating the model into an investment thesis, financial analysis, risk framework and return analysis.
 
 ---
 
-# 👤 Project Author
+## Author
 
 **Opemipo Williams**
 
-Financial Modeling & Investment Analysis
+Financial Modeling · Investment Analysis · Corporate Finance
 
-This project was developed as a practical financial modeling case study to demonstrate the application of corporate finance, valuation and investment analysis techniques to an early-stage technology company.
+This project was developed as part of a financial modelling portfolio to demonstrate practical modelling, analytical and investment evaluation capabilities.
