@@ -451,7 +451,7 @@ The model also contains an annualized Year 3 operating column. Annualized operat
 
 # 👤 Project Author
 
-**Damon Williams**
+**Opemipo Williams**
 
 Financial Modeling & Investment Analysis
 
